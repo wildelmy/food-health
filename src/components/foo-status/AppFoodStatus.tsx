@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AppFoodStatusCard } from "./AppFoodStatusCard";
-import fishFood from "../../assets/fish.png";
-import chickenFood from "../../assets/chicken.png";
-import eggsFood from "../../assets/eggs.png";
+import fishFood from "../../assets/fish.webp";
+import chickenFood from "../../assets/chicken.webp";
+import eggsFood from "../../assets/eggs.webp";
 
 export const AppFoodStatus = () => {
   const [selectedStatus, setSelectedStatus] = useState(1);
@@ -34,24 +34,24 @@ export const AppFoodStatus = () => {
               selectedStatus === 1 ? "text-black border-b-2 border-b-black" : ""
             } `}
           >
-            <button onClick={() => setSelectedStatus(1)}>Order</button>
+            <button id="order" title="view order" onClick={() => setSelectedStatus(1)}>Order</button>
           </div>
           <div
             className={`${
               selectedStatus === 2 ? "text-black border-b-2 border-b-black" : ""
             } `}
           >
-            <button onClick={() => setSelectedStatus(2)}>Delivered</button>
+            <button id="delivered" title="view delivered" onClick={() => setSelectedStatus(2)}>Delivered</button>
           </div>
           <div
             className={`${
               selectedStatus === 3 ? "text-black border-b-2 border-b-black" : ""
             } `}
           >
-            <button onClick={() => setSelectedStatus(3)}>Finished</button>
+            <button id="finished" title="view finished" onClick={() => setSelectedStatus(3)}>Finished</button>
           </div>
         </div>
-        <button className="hidden lg:block font-medium text-primary-orange-1">
+        <button id="see-all" title="sell all" className="hidden lg:block font-medium text-primary-orange-1">
           See all
         </button>
       </div>

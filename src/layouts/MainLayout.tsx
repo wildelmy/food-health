@@ -19,7 +19,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
           <div className="col-span-12 lg:col-span-11">
             <header className="px-7 lg:pl-0 max-w-full flex justify-between items-center py-[30px]">
               <div className="w-96">
-                <h1 className="font-bold text-xl">
+                <h1 className="font-bold text-xl lg:text-3xl">
                   <strong className="text-primary-yellow">Food</strong>
                   <strong className="text-primary-orange-1">Health</strong>
                 </h1>

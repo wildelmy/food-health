@@ -1,7 +1,10 @@
 import logo from "../assets/logo.svg";
-import IconList from "../assets/icon/list_alt.png";
-import IconGraph from "../assets/icon/graph_bar.png";
+import IconStockpot from "../assets/icon/stockpot.png";
+import IconList from "../assets/icon/list.png";
+import IconGraph from "../assets/icon/graph.png";
 import IconTable from "../assets/icon/table.png";
+import IconNotification from "../assets/icon/notifications.png";
+import IconSettings from "../assets/icon/settings.png";
 
 export const AppNavigation = () => {
   return (
@@ -10,29 +13,47 @@ export const AppNavigation = () => {
         <img src={logo} alt="logo Food Health" />
       </a>
       <ul className="mt-20 grid gap-10">
-        <li className="hover:bg-yellow-600">
-          <i
-            className="iconify text-white text-3xl"
-            data-icon="material-symbols-light:stockpot"
-          />
+        <li className="bg-white bg-opacity-[30%] mx-auto p-2 rounded-md">
+          <a href="">
+            <img
+              src={IconStockpot}
+              alt="Icon Stockpot"
+              className="w-5 mx-auto"
+            />
+          </a>
         </li>
         <li>
-          <img src={IconList} alt="logo Food Health" className="w-5 mx-auto" />
+          <a href="">
+            <img src={IconList} alt="Icon List" className="w-5 mx-auto" />
+          </a>
         </li>
         <li>
-          <img src={IconGraph} alt="logo Food Health" className="w-5 mx-auto" />
+          <a href="">
+            <img src={IconGraph} alt="Icon Graph" className="w-5 mx-auto" />
+          </a>
         </li>
         <li>
-          <img src={IconTable} alt="logo Food Health" className="w-5 mx-auto" />
+          <a href="">
+            <img src={IconTable} alt="Icon Table" className="w-5 mx-auto" />
+          </a>
         </li>
         <li>
-          <i className="iconify text-white text-2xl" data-icon="mdi:bell" />
+          <a href="">
+            <img
+              src={IconNotification}
+              alt="Icon Notification"
+              className="w-5 mx-auto"
+            />
+          </a>
         </li>
         <li>
-          <i
-            className="iconify text-white text-3xl"
-            data-icon="solar:settings-bold"
-          />
+          <a href="">
+            <img
+              src={IconSettings}
+              alt="Icon Settings"
+              className="w-5 mx-auto"
+            />
+          </a>
         </li>
       </ul>
     </nav>

@@ -1,4 +1,4 @@
-import heroImg from "../assets/healthy-salad-assortment.png";
+import heroImg from "../assets/healthy-salad-assortment.webp";
 
 export const AppHero = () => {
   return (

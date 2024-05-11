@@ -1,8 +1,8 @@
 import { AppCartItem } from "./AppCartItem";
-import boiledDumplings from "../../assets/boiled-dumplings.png";
-import ayamGeprekPopular from "../../assets/ayam-geprek-popular.jpg";
-import berryBlastSmoothie from "../../assets/berry-blast-smoothie.jpg";
-import watermelonSmoothie from "../../assets/watermelon-smoothie.jpg";
+import boiledDumplings from "../../assets/boiled-dumplings.webp";
+import ayamGeprekPopular from "../../assets/ayam-geprek-popular.webp";
+import berryBlastSmoothie from "../../assets/berry-blast-smoothie.webp";
+import watermelonSmoothie from "../../assets/watermelon-smoothie.webp";
 
 export const AppCart = () => {
   const cartItems = [

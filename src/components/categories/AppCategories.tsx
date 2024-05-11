@@ -1,6 +1,6 @@
-import indonesianFood from "../../assets/indonesian-food.png";
-import japaneseFood from "../../assets/japanese-food.png";
-import koreanFood from "../../assets/korean-food.png";
+import indonesianFood from "../../assets/indonesian-food.webp";
+import japaneseFood from "../../assets/japanese-food.webp";
+import koreanFood from "../../assets/korean-food.webp";
 import { AppCategoryCard } from "./AppCategoryCard";
 
 export const AppCategories = () => {
@@ -31,6 +31,7 @@ export const AppCategories = () => {
         {categories.map((category, index) => (
           <li
             className="relative flex-shrink-0 flex-grow w-[9.82rem] h-[9.4rem] lg:h-[8rem] rounded-xl overflow-hidden cursor-pointer translate-x-10 will-appear"
+            tabIndex={0}
             style={{ transitionDelay: `${index * 500}ms` }}
             >
             <AppCategoryCard key={category.id} category={category} />
